@@ -11,16 +11,47 @@ body {
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: greenyellow;
-    width: 900px;    
-    justify-content: space-evenly;
-    height: 50px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
-li {
+
+ul  {
+    background-color: greenyellow;
     list-style: none;
-    
+    justify-content: space-between;
+    }
+ul li{
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 20px 25px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: relative;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: greenyellow;
+}
+
+ul li ul li a {
+    width: 200px;
+}
+
+ul li a:hover {
+    background-color: green;
+    width: relative;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
 }
