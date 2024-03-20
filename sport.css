@@ -7,7 +7,7 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: blue;
+    background-color: white;
 }
 
 .navbar {
@@ -54,4 +54,24 @@ ul li a:hover {
 
 ul li:hover ul.dropdown {
     display: block;
+} 
+
+.image{
+     padding: 50PX 20PX;
+     align-items: center;
+     justify-content: space-between;
+    
+    
+}
+ .image img{
+    width: 100%;
+ }
+
+.content p{
+    color: yellowgreen;
+    display: flex;
+    justify-content: center;
+   font-weight: 500;
+   font-size: larger;
+  
 }
